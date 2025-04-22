@@ -1,5 +1,5 @@
 function validate(){
-    const number = /^[6-9]\d{8}$/;
+    const number = /^[1-9]\d{8}$/;
     var text = document.getElementById('phone_text');
     var value = document.getElementById('mobile_no').value;
     if(number.test(value)){
