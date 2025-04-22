@@ -1,7 +1,7 @@
 var express = require("express");
 const router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb+srv://sri_teja:Katepally@cluster0.pmmtuyw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url = "mongodb://sri_teja:Katepally@ac-fakttdz-shard-00-00.pmmtuyw.mongodb.net:27017,ac-fakttdz-shard-00-01.pmmtuyw.mongodb.net:27017,ac-fakttdz-shard-00-02.pmmtuyw.mongodb.net:27017/?ssl=true&replicaSet=atlas-11qsof-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0";
 const dbName = 'main_admin';
 let db;
 MongoClient.connect(url, { useUnifiedTopology: true ,useNewUrlParser: true}, (err, client) => {
