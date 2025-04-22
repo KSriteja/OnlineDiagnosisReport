@@ -7,11 +7,11 @@ function validate(){
         text.style.color="#00ff00";
     }
     else{
-        text.innerHTML="Valid Mobile Number";
+        text.innerHTML="Invalid Mobile Number";
         text.style.color="#ff0000";
     }
     if(!value){
-        text.innerHTML="Valid Mobile Number";
+        text.innerHTML="Invalid Mobile Number";
     }
 
 }

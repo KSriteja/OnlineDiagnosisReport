@@ -71,7 +71,7 @@ router.get('/edit_test_details/:id',function(req,res){
 router.post('/edit_test_details/',function(req,res){
     var test_id = parseInt(req.body.test_id);
     var test_type = req.body.test_type;
-    var cost = parseInt(req.body.cost);
+    var cost = (cost*0.05)+cost;
     var query = {"test_id":test_id};
     var update_query ={ $set: {"test_type":test_type,"cost":cost} };
     console.log(query);
